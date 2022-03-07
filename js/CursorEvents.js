@@ -50,7 +50,7 @@ AFRAME.registerComponent("cursor-listener", {
       if (state === 'places-list') {
         const id = this.el.getAttribute("id");
         const placesId = ["taj-mahal", "budapest", "eiffel-tower", "new-york-city"];
-        if (placesId.includes("id")) {
+        if (placesId.includes(id)) {
           placesContainer.setAttribute("tour", {
             state: "view",
             selectedCard: id,
